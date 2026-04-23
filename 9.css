@@ -1,0 +1,88 @@
+body {
+  background-image: url("2.webp");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  perspective: 1000px;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+#main-container {
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(121, 216, 232, 0.6),
+    rgba(119, 226, 107, 0.3)
+  );
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgb(251, 239, 201);
+  max-width: 90%;
+  width: 500px;
+  margin: 5vh auto;
+  margin-top: 200px;
+  box-sizing: border-box;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(90px);
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#news-box {
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+#heading {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(
+    45deg,
+    rgb(108, 244, 34),
+    rgb(6, 243, 196),
+    rgb(8, 88, 8),
+    rgb(43, 43, 248),
+    rgb(15, 7, 70)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite linear;
+  background-size: 200% 200%;
+}
+
+#Nbutton {
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#Cbutton {
+  padding: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#Nbutton:hover {
+  background-color: rgb(109, 243, 227);
+  transform: scale(1.1);
+}
+
+#Cbutton:hover {
+  background-color: rgb(109, 243, 227);
+  transform: scale(1.1);
+}
+
+#main-container:hover {
+  #main-container:hover {
+    transform: scale(1.01) rotateY(0deg);
+  }
+}
