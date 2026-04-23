@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const main = document.getElementById("main-container");
 
   //   gone to newsapi.org and registered there and got my api keys ..
-  const apiKey = "87da97a8e55e4744bb1c47e7978512bf";
+  const apiKey = "write keys";
   const url = `https://newsapi.org/v2/everything?q=India&sortBy=publishedAt&apiKey=${apiKey}`;
 
   Nbtn.addEventListener("click", async () => {
